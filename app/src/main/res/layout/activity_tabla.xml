@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".Tabla">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.002">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="P"
+                android:textColor="@color/rojo"
+                android:textSize="20dp"></TextView>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="N"
+                android:textColor="@color/rojo"
+                android:textSize="20dp"></TextView>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="TEM"
+                android:textColor="@color/rojo"
+                android:textSize="20dp"></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/P2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="20dp"></TextView>
+
+            <TextView
+                android:id="@+id/N2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="20dp"></TextView>
+
+            <TextView
+                android:id="@+id/Tem2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="20dp"></TextView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout7"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TableLayout
+                android:id="@+id/table1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                   >
+
+                    <TextView
+                        android:id="@+id/periodos"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:background="@drawable/tabla"
+                        android:gravity="center"
+                        android:text="Periodos de Pago"
+                        android:textColor="@color/white"
+                        android:padding="2dp"/>
+
+                    <TextView
+                        android:id="@+id/renta"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:background="@drawable/tabla"
+                        android:gravity="center"
+                        android:text="Mensualidad Renta"
+                        android:textColor="@color/white"
+                        />
+
+                    <TextView
+                        android:id="@+id/interes"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:background="@drawable/tabla"
+                        android:gravity="center"
+                        android:text="Interes"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/amortizacion"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:background="@drawable/tabla"
+                        android:gravity="center"
+                        android:text="Amortización"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/saldo"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:background="@drawable/tabla"
+                        android:gravity="center"
+                        android:text="Saldo"
+                        android:textColor="@color/white" />
+                </TableRow>
+            </TableLayout>
+            <TableLayout
+                android:id="@+id/table2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp">
+
+
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

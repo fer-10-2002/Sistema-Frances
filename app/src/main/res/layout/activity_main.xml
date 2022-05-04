@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:background="@drawable/logo"></ImageView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Universidad Andina del Cusco"
+                android:textColor="@color/white"
+                android:textSize="18dp"></TextView>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/andina"></ImageView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+        app:layout_constraintVertical_bias="0.012">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#0E39DA"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4"
+        app:layout_constraintVertical_bias="0.029">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Sistema Frances"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            tools:layout_editor_absoluteX="-1dp"
+            tools:layout_editor_absoluteY="342dp"></TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginLeft="15dp"
+        android:id="@+id/linearLayout6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout5"
+        tools:layout_editor_absoluteX="20dp">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:text="P:"
+                android:textColor="@color/white"
+                android:textSize="20dp"></TextView>
+
+            <EditText
+                android:id="@+id/P"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="10"
+                android:textColor="@color/white">
+
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:text="N:"
+                android:textColor="@color/white"
+                android:textSize="20dp"></TextView>
+
+            <EditText
+                android:id="@+id/N"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="10"
+                android:textColor="@color/white"></EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutporcentaje"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:text="TEM:"
+                android:textColor="@color/white"
+                android:textSize="20dp"></TextView>
+
+            <EditText
+                android:id="@+id/Tem"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="10"
+                android:textColor="@color/white"></EditText>
+        </LinearLayout>
+
+        <Switch
+            android:id="@+id/switch1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Porcentaje"
+            android:textColor="@color/white"
+            android:onClick="porcentaje"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#0E39DA"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout6"
+        app:layout_constraintVertical_bias="0.992">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="© F.Cadenillas y J.Ccoyore"
+            android:textColor="@color/white"
+            android:textSize="25dp"></TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.00"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout6"
+        app:layout_constraintVertical_bias="0.027">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:backgroundTint="#0E39DA"
+            android:onClick="Calcular"
+            android:text="Sistema Frances">
+
+
+        </Button>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#0E39DA"
+            android:onClick="Calcular"
+            android:text="Sistema Aleman"
+            android:layout_margin="10dp">
+
+        </Button>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout6"
+        app:layout_constraintVertical_bias="0.238">
+
+        <Button
+            android:layout_width="174dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#0E39DA"
+            android:onClick="Calcular"
+            android:text="Sistema Ingles"
+            android:layout_margin="10dp">
+
+        </Button>
+
+        <Button
+            android:layout_width="174dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#0E39DA"
+            android:onClick="Calcular"
+            android:text="Flat"
+            android:layout_margin="10dp">
+
+        </Button>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="140dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        tools:layout_editor_absoluteX="58dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.2"
+                android:text="Curso:"
+                android:textColor="@color/white"
+                android:textSize="18dp"></TextView>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="9"
+                android:text=" Ingenieria Economica"
+                android:textColor="@color/white"
+                android:textSize="18dp"></TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.2"
+                android:text="Docente:"
+                android:textColor="@color/white"
+                android:textSize="18dp"></TextView>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="9"
+                android:text=" Sadivar Gamarra, Enrique"
+                android:textColor="@color/white"
+                android:textSize="18dp"></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.2"
+                android:text="Alumno:"
+                android:textColor="@color/white"
+                android:textSize="18dp"></TextView>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="9"
+                android:text=" Ccoyore Llano, Joshet Kevin"
+                android:textColor="@color/white"
+                android:textSize="18dp"></TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.2"
+                android:textColor="@color/white"
+                android:textSize="20dp"></TextView>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="9"
+                android:text=" Cadenillas Naccha, Fernano"
+                android:textColor="@color/white"
+                android:textSize="18dp"></TextView>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
